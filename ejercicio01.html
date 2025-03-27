@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01</title>
+    <link rel="stylesheet" href="ejercicio01.css">
+
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="red">ROJO</div>
+        <div class="blue">AZUL</div>
+        <div class="green">VERDE</div>
+    </div>
+
+    <script>
+        // Función para cambiar el color de fondo del documento
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Asignando eventos de clic a cada cuadrado
+        document.querySelector('.red').addEventListener('click', function() {
+            changeBackgroundColor('red');
+        });
+
+        document.querySelector('.green').addEventListener('click', function() {
+            changeBackgroundColor('green');
+        });
+
+        document.querySelector('.blue').addEventListener('click', function() {
+            changeBackgroundColor('blue');
+        });
+    </script>
+
+</body>
+</html>
